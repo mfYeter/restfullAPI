@@ -48,7 +48,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 - İndrim kuralları tanımlanmıştır.
 - Sipariş girişi sonrası response.json bildirimi tamamlanmıştır.
 ## Kurallar
-### api_customers.php / GET için
+### api_customers.php / GET için :
 - link yapısı http://localhost/api/v1/customers dır.
 - Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
 ### Örnek Giriş -1
@@ -76,9 +76,10 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 		}
 	]
 ```
-### api_customers.php / POST için 
-- link yapısı http://localhost/api/v1/customers dır.
-- veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir. 
+### api_customers.php / POST için
+- Link yapısı http://localhost/api/v1/customers dır.
+- Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
+- Veri girişi doğru kabul edildiği taktirde veritabanı kayıtı yapılarak response.json olarak geri bildirim verilmektedir.
 ### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
 ```shell
 [
@@ -166,6 +167,9 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Message": "Data is Created."
 }
 ```
+### api_customers.php / GET için 
+- Link yapısı http://localhost/api/v1/customers dır.
+- Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
 
 
 
