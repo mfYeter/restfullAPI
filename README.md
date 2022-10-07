@@ -194,6 +194,23 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	]
 }
 ```
+```shell
+[
+	{
+		"id":"gh",
+		"CustomerName": "test",
+		"Since": "2022-12-12",
+		"Revenue": "0.00"
+	}		
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. Array id is not numeric."
+}
+```
 
 
 
