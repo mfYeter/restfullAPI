@@ -50,12 +50,122 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ## Kurallar
 ### api_customers.php / GET için
 - link yapısı http://localhost/api/v1/customers dır.
-- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir. [Örnek veri giriş ve çıkışı lütfen tıklayınız](/json_examples/customer_json_get_example_input.json)
+- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
+### Örnek Giriş -1
+```shell
+[
+	{
+	}
+	
+]
+```
+### Örnek Çıkış -1
+```shell
+	[
+		{
+			"id": 24,
+			"CustomerName": "test",
+			"Since": "0000-00-00",
+			"Revenue": "0.00"
+		},
+		{
+			"id": 25,
+			"CustomerName": "test2",
+			"Since": "2022-10-01",
+			"Revenue": "0.10"
+		}
+	]
+```
 ### api_customers.php / POST için 
 - link yapısı http://localhost/api/v1/customers dır.
-- veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak bildirim vermektedir. [Örnek veri giriş ve çıkışı lütfen tıklayınız](/json_examples/customer_json_post_example_input.json)
+- veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir. 
+### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
+```shell
+[
+	{
+		"Müşteri Adi":"Örnek Şirket"
+	}
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Method Not Allowed, Müşteri Adi. Array is not Acceptable data format ",
+	"Needed Keys": {
+		"CustomerName": "",
+		"Since": "",
+		"Revenue": ""
+	}
+}
+```
+```shell
+[
+	{
+		"id":1,
+		"CustomerName": "",
+		"Since": "",
+		"Revenue": ""
+	}
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. Array Invalid data -> id"
+}
 
+```
+```shell
+[
+	{
+		"CustomerName": "",
+		"Since": "",
+		"Revenue": ""
+	}
+]
 
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. Array Customer name is null"
+}
+```
+```shell
+[
+	{
+		"CustomerName": "test",
+		"Since": "99-99-99",
+		"Revenue": ""
+	}
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. Array Date is not Acceptable format <> Y-d-m"
+}
+```
+```shell
+[
+	{
+		"CustomerName": "test",
+		"Since": "2022-12-12",
+		"Revenue": "100.00"
+	}
+]
+```
+```shell
+{
+	"Status": "OK",
+	"Code": 201,
+	"Message": "Data is Created."
+}
+```
 
 
 
