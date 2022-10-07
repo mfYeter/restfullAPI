@@ -49,6 +49,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 - Sipariş girişi sonrası response.json bildirimi tamamlanmıştır.
 ## Kurallar
 ### api_customers.php / GET için
+- link yapısı http://localhost/api/v1/customers dır.
 - Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
 ### api_customers.php / POST için
 - 
