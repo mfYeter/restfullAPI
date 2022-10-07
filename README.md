@@ -231,5 +231,33 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ### api_customers.php / DELETE için
 - Link yapısı http://localhost/api/v1/customers dır.
 - Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve sadece ID değeri kabul edilmektedir. 
-
+```shell
+[
+	{
+		"id":"1",
+		"CustomerName": "test"
+	}		
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. Please add id information only."
+}
+```
+```shell
+[
+	{
+		"id":"1",
+	}		
+]
+```
+```shell
+{
+	"Status": "Ok",
+	"Code": 200,
+	"Message": "Deleted."
+}
+```
 
