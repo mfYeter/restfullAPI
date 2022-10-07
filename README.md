@@ -24,8 +24,37 @@ ideasoft_case/
 └── ...
 ```
 
-## Installation
+## Proje Hakkında
 
-Tototo Do is a dockerized application. You can use docker-compose to build up all project. 
+Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklikler ve tamamlananlar aşağıdaki gibidir.
 
-It uses a MySQL database that located in a container.
+## Eksik Görevler
+### api_orders.php için
+- Put ve Delete işlemleri yapılmamıştır.
+- 1 ID'li kategoriden iki veya daha fazla ürün satın alındığında en ucuz ürüne %20 indirim yapmayıp, genel toplamdan yapmaktadır.
+
+## Tamamlananlar
+- .htaccess link yapıları düzenlenmiştir.
+### api_customers.php için
+- GET, POST, PUT ve DELETE methodları tamamlanmıştır.
+- Veri girişi kuralları tanımlanmıştır.
+### api_products.php için
+- GET, POST, PUT ve DELETE methodları tamamlanmıştır.
+- Veri girişi kuralları tanımlanmıştır.
+### api_orders.php için
+- GET ve POST methodları tamamlanmıştır.
+- Stok Kontrolü yapılmıştır ve istenmeyen durumda veritabanı kayıt işlemlerini kontrol etmek için rollback ve commit yapısı kullanılmıştır.
+- Veri giriş kuralları tanımlanmıştır.
+- İndrim kuralları tanımlanmıştır.
+- Sipariş girişi sonrası response.json bildirimi tamamlanmıştır.
+## Kurallar
+### api_customers.php / GET için
+- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
+### api_customers.php / POST için
+- 
+
+
+
+
+
+
