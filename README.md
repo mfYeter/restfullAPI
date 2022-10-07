@@ -171,7 +171,29 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ### api_customers.php / PUT için 
 - Link yapısı http://localhost/api/v1/customers dır.
 - Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
-
+### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
+```shell
+[
+	{
+			"id":1,
+			"Kontrol": "test",
+			"Since": "2022-12-12",
+			"Revenue": "0.00"
+	}		
+]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 406,
+	"Message": "Not Acceptable, 0. in Array some key is not found.",
+	"Need Keys": [
+		{
+			"CustomerName": ""
+		}
+	]
+}
+```
 
 
 
