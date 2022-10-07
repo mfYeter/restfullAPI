@@ -27,7 +27,6 @@ ideasoft_case/
 
 Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklikler ve tamamlananlar aşağıdaki gibidir.
 
-## Eksik Görevler
 ### api_orders.php için
 - Put ve Delete işlemleri yapılmamıştır.
 - 1 ID'li kategoriden iki veya daha fazla ürün satın alındığında en ucuz ürüne %20 indirim yapmayıp, genel toplamdan yapmaktadır.
