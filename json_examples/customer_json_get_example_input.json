@@ -1,7 +1,28 @@
+Örnek Json veri girişi
+
 [
 	{
 
 
 	}
 	
+]
+
+Örnek Json veri Çıkışı
+
+[
+	[
+		{
+			"id": 24,
+			"CustomerName": "test",
+			"Since": "0000-00-00",
+			"Revenue": "0.00"
+		},
+		{
+			"id": 25,
+			"CustomerName": "test2",
+			"Since": "2022-10-01",
+			"Revenue": "0.10"
+		}
+	]
 ]
