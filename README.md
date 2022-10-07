@@ -336,4 +336,54 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	]
 }
 ```
+```shell
+[
+	{
+	"customerId":1,
+	"items":[
+		{
+		"productId":"1",
+		"quantity":"500"
+		}
+		]
+	},
+	{
+	"customerId":2,
+	"items":[
+		{
+		"productId":"1",
+		"quantity":"500"
+		}
+		,{
+		"productId":"3",
+		"quantity":"500"
+		}
+		,{
+		"productId":"4",
+		"quantity":"500"
+		}
+		]
+	},
+		{
+		"customerId":3,
+		"items":[
+		{
+		"productId":"1",
+		"quantity":"500"
+		}
+		]
+	}	
+]
+
+```
+```shell
+{
+	"Status": "OK",
+	"Code": 201,
+	"Message": "Data is Created.",
+	"Discounts": [
+		[]
+	]
+}
+```
 
