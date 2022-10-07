@@ -175,10 +175,10 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ```shell
 [
 	{
-			"id":1,
-			"Kontrol": "test",
-			"Since": "2022-12-12",
-			"Revenue": "0.00"
+		"id":1,
+		"Kontrol": "test",
+		"Since": "2022-12-12",
+		"Revenue": "0.00"
 	}		
 ]
 ```
