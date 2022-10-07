@@ -170,7 +170,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ```
 ### api_customers.php / PUT için 
 - Link yapısı http://localhost/api/v1/customers dır.
-- Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
+- Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir.
 ### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
 ```shell
 [
@@ -228,6 +228,8 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Message": "Data is updated."
 }
 ```
-
+### api_customers.php / DELETE için
+- Link yapısı http://localhost/api/v1/customers dır.
+- Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve sadece ID değeri kabul edilmektedir. 
 
 
