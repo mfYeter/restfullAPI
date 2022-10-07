@@ -79,6 +79,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ### api_customers.php / POST için
 - Link yapısı http://localhost/api/v1/customers dır.
 - Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
+- Hatalar, kaçıncı dizide ise dizi bilgisi verilmektedir. 
 - Veri girişi doğru kabul edildiği taktirde veritabanı kayıtı yapılarak response.json olarak geri bildirim verilmektedir.
 ### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
 ```shell
@@ -167,7 +168,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Message": "Data is Created."
 }
 ```
-### api_customers.php / GET için 
+### api_customers.php / PUT için 
 - Link yapısı http://localhost/api/v1/customers dır.
 - Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve id değeri kabul edilmemektedir.
 
