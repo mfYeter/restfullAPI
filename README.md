@@ -231,6 +231,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ### api_customers.php / DELETE için
 - Link yapısı http://localhost/api/v1/customers dır.
 - Veri giriş kontrolü yapılmış ve hatalı giriş yapıldığı taktirde response.json olarak veri girişi hakkında geri bildirim vermektedir ve sadece ID değeri kabul edilmektedir. 
+### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
 ```shell
 [
 	{
@@ -275,3 +276,64 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 - link yapısı http://localhost/api/v1/products dır.
 - Yine yukaridaki şekilde benzer veri giriş kontrolleri yapılmaktadır. 
 - Sadece ID değerine izin verilmemektedir.
+
+### api_orders.php / GET için 
+- link yapısı http://localhost/api/v1/orders dır.
+- Herhangi bir id değeri verilmediğinde siparişleri getirmez ID alanı zorunludur.
+
+### api_product.php / POST için 
+- link yapısı http://localhost/api/v1/orders dır.
+- Yine yukaridaki şekilde benzer veri giriş kontrolleri yapılmaktadır. 
+- Sadece Customer ID ve items girişlerine değerine izin verilmemektedir.
+- Stok kontrolü yapılmaktadır. 
+- Bir hata oluştuğunda rollback devreye girmektedir. 
+### Örnek giriş ve çıkışları aşağıda paylaşılmıştır.
+```shell
+[
+	{
+		"customerId":1,
+		"items":
+		[
+		{
+			"productId":"1",
+			"quantity":"1"
+		}
+		]
+	}	
+]
+```
+```shell
+{
+	"Status": "OK",
+	"Code": 201,
+	"Message": "Data is Created.",
+	"Discounts": [
+		[]
+	]
+}
+```
+```shell
+[
+	{
+		"customerId":1,
+		"items":
+		[
+			{
+			"productId":"1",
+			"quantity":"500"
+			}
+		]
+	}	
+]
+```
+```shell
+{
+	"Status": "OK",
+	"Code": 201,
+	"Message": "Data is Created.",
+	"Discounts": [
+		[]
+	]
+}
+```
+
