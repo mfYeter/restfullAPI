@@ -43,7 +43,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 - GET ve POST methodları tamamlanmıştır.
 - Stok Kontrolü yapılmıştır ve istenmeyen durumda veritabanı kayıt işlemlerini kontrol etmek için rollback ve commit yapısı kullanılmıştır.
 - Veri giriş kuralları tanımlanmıştır.
-- İndrim kuralları tanımlanmıştır.
+- İndirim kuralları tanımlanmıştır.
 - Sipariş girişi sonrası response.json bildirimi tamamlanmıştır.
 ## Kurallar
 ### api_customers.php / GET için 
