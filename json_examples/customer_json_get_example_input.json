@@ -1,14 +1,11 @@
-#Örnek Json veri girişi
-
 [
+	
 	{
-
 
 	}
 	
 ]
 
-Örnek Json veri Çıkışı
 
 [
 	[
@@ -26,3 +23,4 @@
 		}
 	]
 ]
+
