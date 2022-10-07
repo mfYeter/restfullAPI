@@ -382,7 +382,140 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Code": 201,
 	"Message": "Data is Created.",
 	"Discounts": [
-		[]
+		[
+			{
+				"orderId": 2,
+				"discounts": [
+					{
+						"discountReason": "1000_over_get_%10",
+						"discountAmount": "6037.50",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "18112.50",
+				"discountedTotal": "42262.50"
+			},
+			{
+				"orderId": 2,
+				"discounts": [
+					{
+						"discountReason": "1000_over_get_%10",
+						"discountAmount": "6037.50",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "18112.50",
+				"discountedTotal": "42262.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 3,
+				"discounts": [
+					{
+						"discountReason": "1_Category_Get_%20",
+						"discountAmount": "12075.00",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "23224.50",
+				"discountedTotal": "54190.50"
+			},
+			{
+				"orderId": 4,
+				"discounts": [
+					{
+						"discountReason": "1000_over_get_%10",
+						"discountAmount": "6037.50",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "18112.50",
+				"discountedTotal": "42262.50"
+			},
+			{
+				"orderId": 4,
+				"discounts": [
+					{
+						"discountReason": "1000_over_get_%10",
+						"discountAmount": "6037.50",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "18112.50",
+				"discountedTotal": "42262.50"
+			},
+			{
+				"orderId": 4,
+				"discounts": [
+					{
+						"discountReason": "1000_over_get_%10",
+						"discountAmount": "6037.50",
+						"subtotal": "42262.50"
+					}
+				],
+				"totalDiscount": "18112.50",
+				"discountedTotal": "42262.50"
+			}
+		]
 	]
 }
 ```
