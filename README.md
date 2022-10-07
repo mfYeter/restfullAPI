@@ -13,7 +13,6 @@ ideasoft_case/
 ├───── config/
 │  ├───────── connect.php
 │  ├───────── function.php
-│  ├───────── features
 ├── core_api/
 │   ├───────── api_customers.php
 │   ├───────── api_orders.php
