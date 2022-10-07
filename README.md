@@ -48,7 +48,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 - İndrim kuralları tanımlanmıştır.
 - Sipariş girişi sonrası response.json bildirimi tamamlanmıştır.
 ## Kurallar
-### api_customers.php / GET için :
+### api_customers.php / GET için 
 - link yapısı http://localhost/api/v1/customers dır.
 - Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
 ### Örnek Giriş -1
@@ -260,4 +260,18 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Message": "Deleted."
 }
 ```
-
+### api_product.php / GET için 
+- link yapısı http://localhost/api/v1/products dır.
+- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
+- ID değerinden farklı bir değer kabul edilmemektedir. Örnek veri giriş ve çıkışları yukarıdaki gibidir.
+### api_product.php / POST için 
+- link yapısı http://localhost/api/v1/products dır.
+- Yine yukaridaki şekilde benzer veri giriş kontrolleri yapılmaktadır. 
+- Sadece ID değerine izin verilmemektedir.
+### api_product.php / PUT için 
+- link yapısı http://localhost/api/v1/products dır.
+- Yine yukaridaki şekilde benzer veri giriş kontrolleri yapılmaktadır. 
+### api_product.php / DELETE için 
+- link yapısı http://localhost/api/v1/products dır.
+- Yine yukaridaki şekilde benzer veri giriş kontrolleri yapılmaktadır. 
+- Sadece ID değerine izin verilmemektedir.
