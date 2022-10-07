@@ -48,7 +48,7 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 ## Kurallar
 ### api_customers.php / GET için 
 - link yapısı http://localhost/api/v1/customers dır.
-- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamağında tüm veriler listelenir.
+- Herhangi bir id değeri verilmediği veya veritabanında eşleşen bir değer bulamadığında tüm veriler listelenir.
 ### Örnek Giriş -1
 ```shell
 [
