@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $IpAdresi         = $_SERVER["REMOTE_ADDR"];
 $ZamanDamgasi     = time();
 $TarihSaat        = date("Y-m-d", $ZamanDamgasi);
