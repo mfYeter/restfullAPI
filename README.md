@@ -519,4 +519,23 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	]
 }
 ```
-
+```shell
+[
+	{
+		"customerId":1,
+		"items":[
+			{
+			"productId":"1",
+			"quantity":"505550"
+			}
+			]
+	}
+	]
+```
+```shell
+{
+	"Status": "Error",
+	"Code": 400,
+	"Message": "Bad Request, items=> Key 0. 1 ProductCode  Insufficient stock."
+}
+```
