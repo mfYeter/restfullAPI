@@ -1,6 +1,6 @@
 # RESTFULL API
 
-Basit bir RESTful API Uygulaması
+RESTful API Uygulaması
 
 ## Teknolojiler
 
