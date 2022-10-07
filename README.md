@@ -211,6 +211,23 @@ Teknik yeterlilik konusunun anlaşılması için geliştirilmiş olup,  eksiklik
 	"Message": "Not Acceptable, 0. Array id is not numeric."
 }
 ```
+```shell
+[
+	{
+		"id":"1",
+		"CustomerName": "tes3t",
+		"Since": "2022-12-13",
+		"Revenue": "0.00"
+	}		
+]
+```
+```shell
+{
+	"Status": "OK",
+	"Code": 201,
+	"Message": "Data is updated."
+}
+```
 
 
 
